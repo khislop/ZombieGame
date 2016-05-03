@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Zombie Circles</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<h1 id="title" class="game-title">Zombie Circles</h1>
+
+		<div id="instructions" class="prompt">
+			<div id="hidden">
+				<button class="instrucButton" onclick="show()">Click here to show instructions!</button>
+			</div>
+			<div id="shown">				
+				<div class="welcome">Welcome to Zombie Circles!</div>
+				<div>Use the arrow keys to move (the black circle) and avoid zombies (red circles) at all costs!</div>
+				<div>Collect green circles and stay alive to get more points!</div>
+				<div>Be careful! If you hold your arrow keys too long your circle will get tired and you'll be slower!</div>
+				<div>Zombies <strong>WILL</strong> chase you if you get too close.</div>
+				<div>Keep moving - staying in one spot will eventually cause the zombies to horde.</div>
+				<div class="hud">Current Score: <span id="score"></span> Number of zombies: <span id="num-zombies"></span> Chase Radius: <span id="chase-radius"></span></div>
+				<button class="instrucButton" onclick="hide()">Click here to hide instructions!</button>
+			</div>
+		</div>
+
+		<canvas id="gamecanvas">
+		</canvas>
+
+		<div id="imports">
+			<script src="scripts/game.js"></script>
+		</div>
+	</body>
+</html>
